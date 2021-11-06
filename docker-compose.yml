@@ -12,6 +12,6 @@ services:
     volumes:
     - ./data/code-server:/config
     - ./site:/config/site
-    #ports:
-    #  - 8443:8443
+    ports:
+     - 14491:8443
     restart: unless-stopped 
