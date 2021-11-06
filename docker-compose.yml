@@ -6,8 +6,8 @@ services:
     container_name: code-server
     env_file: .code.env
     environment:
-    - PUID=82
-    - PGID=82
+    - PUID=1000
+    - PGID=1000
     - TZ=Asia/Seoul
     volumes:
     - ./data/code-server:/config
