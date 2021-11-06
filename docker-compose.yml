@@ -11,7 +11,8 @@ services:
     - TZ=Asia/Seoul
     volumes:
     - ./data/code-server:/config
-    - ./site:/config/site
+    - ./site:/config/workspace
+    - ..:/config/home
     ports:
      - 14491:8443
     restart: unless-stopped 
