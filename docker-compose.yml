@@ -16,5 +16,5 @@ services:
     - ./site:/config/workspace
     - ..:/config/home
     ports:
-     - 14491:8443
+     - 80:8443
     restart: unless-stopped 
